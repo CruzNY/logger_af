@@ -102,7 +102,8 @@ public class NetworkLogger {
     private boolean isFilteredResource(Request request) {
         String url = request.getUrl().toLowerCase();
         return url.endsWith(".png") || url.endsWith(".jpg") || url.endsWith(".jpeg") ||
-               url.endsWith(".gif") || url.endsWith(".css") || url.endsWith(".svg") || url.endsWith(".img");
+               url.endsWith(".gif") || url.endsWith(".css") || url.endsWith(".svg") || url.endsWith(".img")
+               || url.endsWith(".ico");
     }
 
     private boolean isFilteredResource(Response response) {
